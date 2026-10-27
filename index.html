@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Suple Vitae | Suplementos naturais pelo WhatsApp</title>
+  <meta name="description" content="Vitrine de amostra da Suple Vitae. Veja suplementos naturais e peça pelo WhatsApp.">
+  <meta name="theme-color" id="theme-color" content="#fffbe3">
+  <meta property="og:title" content="Suple Vitae">
+  <meta property="og:description" content="Vitrine de amostra de suplementos naturais. Peça pelo WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="preload" as="image" href="images/omega.jpg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: "#fffbe3",
+            "olive-soft": "#eaeec6",
+            sage: "#6a7b53",
+            teal: "#3e8380",
+            gold: "#c7b76d",
+            earth: "#815f1a",
+            "olive-dark": "#494d36",
+            forest: "#333a26"
+          },
+          fontFamily: {
+            sans: ["Plus Jakarta Sans", "system-ui", "sans-serif"]
+          },
+          maxWidth: {
+            page: "80rem"
+          }
+        }
+      }
+    };
+  </script>
+  <script>
+    (function () {
+      try {
+        var stored = localStorage.getItem("suple-theme");
+        var theme = stored || (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+        var meta = document.getElementById("theme-color");
+        if (meta) meta.setAttribute("content", theme === "dark" ? "#2c3324" : "#fffbe3");
+      } catch (e) {}
+      document.documentElement.classList.add("js");
+    })();
+  </script>
+  <style>
+    :root {
+      --cream: #fffbe3;
+      --olive-soft: #eaeec6;
+      --sage: #6a7b53;
+      --sage-btn: #667650;
+      --teal: #3e8380;
+      --teal-ink: #1e4c4a;
+      --gold: #c7b76d;
+      --earth: #815f1a;
+      --olive-dark: #494d36;
+      --forest: #333a26;
+      --bg: var(--cream);
+      --bg-muted: var(--olive-soft);
+      --card: var(--olive-soft);
+      --surface: #fffdf6;
+      --text: var(--forest);
+      --text-muted: var(--olive-dark);
+      --heading: var(--earth);
+      --on-btn: var(--cream);
+      --footer: var(--olive-dark);
+      --footer-text: var(--cream);
+      --badge-bg: #e5f2f1;
+      --badge-text: var(--teal-ink);
+      --header-bg: color-mix(in srgb, var(--cream) 92%, transparent);
+      --shadow: 0 16px 36px rgb(51 58 38 / 0.08);
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    :root[data-theme="light"] {
+      --bg: var(--cream);
+      --bg-muted: var(--olive-soft);
+      --card: var(--olive-soft);
+      --surface: #fffdf6;
+      --text: var(--forest);
+      --text-muted: var(--olive-dark);
+      --heading: var(--earth);
+      --footer: var(--olive-dark);
+      --footer-text: var(--cream);
+      --badge-bg: #e5f2f1;
+      --badge-text: var(--teal-ink);
+      --header-bg: color-mix(in srgb, var(--cream) 92%, transparent);
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #2c3324;
+      --bg-muted: #343c2b;
+      --card: #3e4733;
+      --surface: #343c2b;
+      --text: #fffbe3;
+      --text-muted: #d5d2b4;
+      --heading: #e4d7a1;
+      --footer: #23281b;
+      --footer-text: #fffbe3;
+      --badge-bg: #1a3c3a;
+      --badge-text: #d7efed;
+      --header-bg: color-mix(in srgb, #2c3324 92%, transparent);
+      --shadow: 0 16px 36px rgb(0 0 0 / 0.28);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #2c3324;
+        --bg-muted: #343c2b;
+        --card: #3e4733;
+        --surface: #343c2b;
+        --text: #fffbe3;
+        --text-muted: #d5d2b4;
+        --heading: #e4d7a1;
+        --footer: #23281b;
+        --footer-text: #fffbe3;
+        --badge-bg: #1a3c3a;
+        --badge-text: #d7efed;
+        --header-bg: color-mix(in srgb, #2c3324 92%, transparent);
+        --shadow: 0 16px 36px rgb(0 0 0 / 0.28);
+      }
+    }
+
+    @media (prefers-reduced-transparency: reduce) {
+      :root { --header-bg: var(--bg); }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+      font-size: 1.0625rem;
+      line-height: 1.6;
+    }
+
+    img { max-width: 100%; display: block; }
+
+    :focus-visible {
+      outline: 2px solid var(--text);
+      outline-offset: 3px;
+    }
+
+    ::selection {
+      background: #c7b76d;
+      color: #333a26;
+    }
+
+    .max-w-page { max-width: 80rem; margin-inline: auto; }
+
+    .skip {
+      position: absolute;
+      left: 1rem;
+      top: -4rem;
+      z-index: 40;
+      border-radius: 999px;
+      background: var(--forest);
+      color: var(--cream);
+      padding: 0.65rem 1rem;
+      font-weight: 700;
+    }
+
+    .skip:focus { top: 0.75rem; }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    h1, h2, h3 {
+      margin: 0;
+      color: var(--heading);
+      font-weight: 700;
+      letter-spacing: -0.035em;
+      line-height: 1.08;
+    }
+
+    p { margin: 0; }
+
+    .site-header {
+      position: fixed;
+      inset: 0 0 auto 0;
+      z-index: 20;
+      height: 4rem;
+      background: var(--header-bg);
+      border-bottom: 1px solid color-mix(in srgb, var(--gold) 72%, var(--sage));
+      backdrop-filter: blur(16px);
+    }
+
+    .bar {
+      height: 4rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      min-height: 2.75rem;
+      color: var(--heading);
+      font-weight: 700;
+      letter-spacing: -0.03em;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .logo-plate {
+      display: grid;
+      place-items: center;
+      flex: none;
+      width: 3.35rem;
+      height: 3.35rem;
+      padding: 0.12rem;
+      border-radius: 0.8rem;
+      background: var(--cream);
+    }
+
+    .logo-plate-lg { width: 5rem; height: 5rem; border-radius: 1.1rem; }
+
+    .logo-mark {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .footer-brand-row {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+    }
+
+    .desktop-nav {
+      display: none;
+      align-items: center;
+      gap: 1.15rem;
+    }
+
+    .desktop-nav a {
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 600;
+      white-space: nowrap;
+      min-height: 2.75rem;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .desktop-nav a:hover { color: var(--heading); }
+
+    .desktop-nav a[aria-current="page"] {
+      color: var(--heading);
+      text-decoration: underline;
+      text-decoration-color: var(--sage);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 0.35em;
+    }
+
+    .bar-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .icon-btn {
+      width: 2.75rem;
+      height: 2.75rem;
+      border-radius: 999px;
+      border: 1px solid var(--sage);
+      background: transparent;
+      color: var(--text);
+      display: grid;
+      place-items: center;
+      cursor: pointer;
+      transition: transform 280ms var(--ease), background-color 280ms var(--ease);
+    }
+
+    .icon-btn:hover { background: color-mix(in srgb, var(--sage) 14%, transparent); }
+    .icon-btn:active { transform: scale(0.98); }
+
+    .theme-toggle .icon-sun { display: none; }
+    :root[data-theme="dark"] .theme-toggle .icon-moon { display: none; }
+    :root[data-theme="dark"] .theme-toggle .icon-sun { display: inline-block; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      min-height: 2.75rem;
+      padding: 0.3rem 0.35rem 0.3rem 1rem;
+      border-radius: 999px;
+      background: var(--sage-btn);
+      color: var(--on-btn);
+      font-weight: 700;
+      font-size: 0.95rem;
+      line-height: 1;
+      text-decoration: none;
+      white-space: nowrap;
+      border: 0;
+      cursor: pointer;
+      transition: transform 280ms var(--ease);
+    }
+
+    .btn:hover .btn-icon { transform: translate(2px, -1px) scale(1.06); }
+    .btn:active { transform: scale(0.98); }
+
+    .btn-icon {
+      display: grid;
+      place-items: center;
+      width: 2.05rem;
+      height: 2.05rem;
+      border-radius: 999px;
+      background: color-mix(in srgb, var(--cream) 18%, transparent);
+      transition: transform 400ms var(--ease);
+    }
+
+    .btn-block { width: 100%; }
+
+    .header-cta { display: none; }
+
+    #menu-mobile { position: relative; display: flex; align-items: center; }
+    #menu-mobile summary { list-style: none; cursor: pointer; min-width: 2.75rem; min-height: 2.75rem; display: grid; place-items: center; color: var(--text); }
+    #menu-mobile summary::-webkit-details-marker { display: none; }
+
+    .burger {
+      width: 1.15rem;
+      height: 0.75rem;
+      display: grid;
+      align-content: space-between;
+    }
+
+    .burger span {
+      display: block;
+      height: 2px;
+      border-radius: 999px;
+      background: currentColor;
+      transform-origin: center;
+      transition: transform 400ms var(--ease);
+    }
+
+    #menu-mobile[open] .burger span:first-child { transform: translateY(5px) rotate(45deg); }
+    #menu-mobile[open] .burger span:last-child { transform: translateY(-5px) rotate(-45deg); }
+
+    .mobile-panel {
+      position: fixed;
+      top: 4rem;
+      left: 0;
+      right: 0;
+      z-index: 20;
+      background: var(--bg);
+      border-bottom: 1px solid color-mix(in srgb, var(--gold) 72%, var(--sage));
+      padding: 0.35rem 1rem 1.25rem;
+    }
+
+    .mobile-panel a {
+      display: flex;
+      align-items: center;
+      min-height: 2.75rem;
+      color: var(--text);
+      text-decoration: none;
+      font-weight: 600;
+      border-top: 1px solid color-mix(in srgb, var(--gold) 45%, transparent);
+    }
+
+    .mobile-panel a[aria-current="page"] { color: var(--heading); }
+    .mobile-panel .btn { margin-top: 0.9rem; }
+
+    .hero {
+      min-height: auto;
+      padding: 4.75rem 0 1.5rem;
+    }
+
+    .hero-title {
+      font-size: clamp(2.45rem, 1.2rem + 2.4vw, 3.45rem);
+      max-width: 12ch;
+      line-height: 1.05;
+    }
+
+    .lede {
+      max-width: 34rem;
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      min-height: 2.75rem;
+      color: var(--text);
+      font-weight: 700;
+      text-underline-offset: 0.28em;
+      text-decoration-thickness: 2px;
+      text-decoration-color: var(--sage);
+    }
+
+    .hero-photo {
+      position: relative;
+      height: 7.5rem;
+      overflow: hidden;
+      border-radius: 1.05rem;
+      background: color-mix(in srgb, var(--sage) 12%, var(--surface));
+    }
+
+    .slide-title { font-size: 1.35rem; }
+
+    .hero-photo img,
+    .shot img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .bezel {
+      background: color-mix(in srgb, var(--gold) 38%, var(--olive-soft));
+      border-radius: 1.5rem;
+      padding: 0.45rem;
+      box-shadow: var(--shadow);
+    }
+
+    .bezel-inner {
+      background: var(--surface);
+      border-radius: 1.15rem;
+      overflow: hidden;
+    }
+
+    .badge-slot { min-height: 1.85rem; }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      min-height: 1.7rem;
+      padding: 0.1rem 0.7rem;
+      border-radius: 999px;
+      border: 1px solid var(--teal);
+      background: var(--badge-bg);
+      color: var(--badge-text);
+      font-size: 0.78rem;
+      font-weight: 700;
+    }
+
+    .condition { color: var(--text-muted); font-size: 0.95rem; }
+
+    .hero-controls { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-top: 0.9rem; }
+
+    .hero-pagination { display: flex; align-items: center; gap: 0.4rem; min-height: 2.75rem; }
+
+    .hero-pagination .swiper-pagination-bullet {
+      width: 0.55rem;
+      height: 0.55rem;
+      margin: 0 !important;
+      background: var(--gold);
+      opacity: 1;
+    }
+
+    .hero-pagination .swiper-pagination-bullet-active {
+      background: var(--sage);
+      transform: scale(1.3);
+    }
+
+    .hero-pause .when-paused { display: none; }
+    .hero-pause[aria-pressed="true"] .when-playing { display: none; }
+    .hero-pause[aria-pressed="true"] .when-paused { display: inline-block; }
+
+    .section { padding: 6rem 0; }
+    .about { background: var(--bg-muted); }
+
+    .section-title { font-size: clamp(2rem, 1.2rem + 2vw, 3.1rem); max-width: 14ch; }
+
+    .shot { position: relative; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 1.15rem; }
+    .shot img { transition: transform 700ms var(--ease); }
+
+    .promise-panel {
+      background: var(--surface);
+      border-radius: 1.5rem;
+      padding: 0.4rem 1.25rem;
+      border: 1px solid color-mix(in srgb, var(--gold) 80%, var(--sage));
+      box-shadow: var(--shadow);
+    }
+
+    .promises { list-style: none; margin: 0; padding: 0; }
+    .promises li { display: flex; gap: 0.9rem; align-items: flex-start; padding: 1.15rem 0; }
+    .promises li + li { border-top: 1px solid color-mix(in srgb, var(--gold) 75%, var(--sage)); }
+    .promises h3 { font-size: 1.15rem; }
+    .promises p { color: var(--text-muted); margin-top: 0.25rem; }
+
+    .promise-icon {
+      flex: none;
+      width: 2.5rem;
+      height: 2.5rem;
+      border-radius: 999px;
+      display: grid;
+      place-items: center;
+      background: color-mix(in srgb, var(--sage) 16%, var(--cream));
+      color: var(--forest);
+    }
+
+    .filters { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+    .filter {
+      min-height: 2.75rem;
+      padding: 0.35rem 0.95rem;
+      border-radius: 999px;
+      border: 1px solid var(--sage);
+      background: transparent;
+      color: var(--text);
+      font: inherit;
+      font-weight: 700;
+      font-size: 0.92rem;
+      cursor: pointer;
+    }
+
+    .filter[aria-pressed="true"] {
+      background: var(--sage-btn);
+      border-color: var(--sage-btn);
+      color: var(--on-btn);
+    }
+
+    .filter:active { transform: scale(0.98); }
+
+    .product-card { height: 100%; background: var(--card); border-radius: 1.5rem; border: 1px solid color-mix(in srgb, var(--gold) 70%, var(--sage)); box-shadow: var(--shadow); overflow: hidden; }
+    .product-core { display: flex; flex-direction: column; height: 100%; }
+    .product-shot { position: relative; aspect-ratio: 1; overflow: hidden; background: color-mix(in srgb, var(--sage) 10%, var(--surface)); }
+    .product-shot img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform 700ms var(--ease); }
+    .product-body { display: flex; flex-direction: column; gap: 0.45rem; flex: 1; padding: 1rem 1rem 1rem; }
+    .product-body h3 { font-size: 1.25rem; }
+    .product-body p { color: var(--text-muted); }
+    .product-body .btn { margin-top: auto; }
+
+    .catalog-status { color: var(--text-muted); font-weight: 600; }
+
+    .empty-state {
+      margin-top: 1.5rem;
+      padding: 1.5rem;
+      border-radius: 1.25rem;
+      background: var(--card);
+      border: 1px solid color-mix(in srgb, var(--gold) 70%, var(--sage));
+    }
+
+    .phone-link {
+      color: var(--heading);
+      font-size: clamp(1.8rem, 2vw + 1rem, 2.7rem);
+      font-weight: 700;
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      text-decoration: none;
+    }
+
+    .phone-link:hover { text-decoration: underline; text-decoration-color: var(--sage); text-underline-offset: 0.18em; }
+
+    .site-footer {
+      background: var(--footer);
+      color: var(--footer-text);
+      padding: 4rem 0 6.5rem;
+    }
+
+    .site-footer a { color: var(--olive-soft); text-decoration: none; font-weight: 600; }
+    .site-footer a:hover { color: var(--cream); text-decoration: underline; text-underline-offset: 0.25em; }
+    .footer-brand { color: var(--cream); font-size: 1.35rem; font-weight: 700; letter-spacing: -0.03em; }
+    .footer-muted { color: color-mix(in srgb, var(--cream) 78%, var(--gold)); }
+    .footer-links { list-style: none; margin: 0; padding: 0; display: grid; gap: 0.35rem; }
+    .footer-links a { display: inline-flex; min-height: 2.25rem; align-items: center; gap: 0.45rem; }
+
+    .wa-float {
+      position: fixed;
+      right: 1rem;
+      bottom: 1rem;
+      z-index: 30;
+      width: 3.5rem;
+      height: 3.5rem;
+      display: grid;
+      place-items: center;
+      border-radius: 999px;
+      background: var(--sage-btn);
+      color: var(--on-btn);
+      font-size: 1.7rem;
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgb(51 58 38 / 0.2);
+      transition: transform 400ms var(--ease);
+    }
+
+    .wa-float::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      background: var(--sage);
+      z-index: -1;
+      animation: wa-pulse 2.4s var(--ease) infinite;
+    }
+
+    .wa-float:hover { transform: translateY(-2px); }
+    .wa-float:active { transform: scale(0.98); }
+
+    @keyframes wa-pulse {
+      0% { transform: scale(1); opacity: 0.45; }
+      100% { transform: scale(1.55); opacity: 0; }
+    }
+
+    .js .reveal {
+      opacity: 0;
+      transform: translateY(1.1rem);
+      transition: opacity 700ms var(--ease), transform 700ms var(--ease);
+    }
+
+    .js .reveal.is-in { opacity: 1; transform: none; }
+
+    .hero-swiper:not(.swiper-initialized) .swiper-wrapper { display: grid; gap: 1rem; }
+
+    .hero-more-desktop { display: none; }
+
+    @media (max-width: 1023px) {
+      .hero-layout { gap: 0.75rem; }
+      .hero-copy .lede { margin-top: 0.5rem; }
+      .hero-controls { margin-top: 0.45rem; padding-right: 4.5rem; }
+      .hero-swiper .bezel-inner { gap: 0.55rem; padding: 0.55rem; }
+    }
+
+    @media (min-width: 1024px) {
+      .desktop-nav { display: flex; }
+      .header-cta { display: inline-flex; }
+      #menu-mobile { display: none; }
+      .hero {
+        min-height: 100dvh;
+        padding: 5.25rem 0 2.5rem;
+      }
+      .hero-photo {
+        height: auto;
+        aspect-ratio: 4 / 5;
+        max-height: 68vh;
+      }
+      .slide-title { font-size: 1.7rem; }
+      .hero-more-desktop { display: inline-flex; }
+      .hero-more-mobile { display: none; }
+    }
+
+    @media (hover: hover) {
+      .product-card:hover .product-shot img,
+      .shot:hover img { transform: scale(1.045); }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .js .reveal,
+      .js .reveal.is-in { opacity: 1; transform: none; transition: none; }
+      .wa-float::after { animation: none; opacity: 0; }
+      .burger span,
+      .btn,
+      .btn-icon,
+      .product-shot img,
+      .shot img,
+      .icon-btn,
+      .wa-float { transition: none; }
+      .hero-pause { display: none; }
+    }
+
+    @media (max-width: 1023px) {
+      .section { padding: 4.5rem 0; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Suple Vitae",
+    "slogan": "Suplementos naturais para a rotina.",
+    "sameAs": ["https://www.instagram.com/suplevitae/"],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+55-12-99131-5805",
+      "contactType": "customer service",
+      "availableLanguage": "Portuguese"
+    }
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#conteudo">Pular para o conteúdo</a>
+
+  <header class="site-header">
+    <div class="bar mx-auto w-full max-w-page px-4 md:px-6">
+      <a class="brand" href="#inicio">
+        <span class="logo-plate">
+          <img class="logo-mark" src="images/logo.png" alt="" width="50" height="50">
+        </span>
+        Suple Vitae
+      </a>
+
+      <nav class="desktop-nav" aria-label="Principal">
+        <a href="#inicio" data-nav>Início</a>
+        <a href="#destaques" data-nav>Destaques</a>
+        <a href="#sobre" data-nav>Sobre Nós</a>
+        <a href="#produtos" data-nav>Produtos</a>
+        <a href="#contato" data-nav>Contato</a>
+      </nav>
+
+      <div class="bar-actions">
+        <button class="icon-btn theme-toggle" id="theme-toggle" type="button" aria-pressed="false" aria-label="Ativar tema escuro">
+          <i class="fa-solid fa-moon icon-moon" aria-hidden="true"></i>
+          <i class="fa-solid fa-sun icon-sun" aria-hidden="true"></i>
+        </button>
+        <a class="btn header-cta" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Suple%20Vitae%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">
+          <span>Falar no WhatsApp</span>
+          <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+        </a>
+        <details id="menu-mobile">
+          <summary>
+            <span class="sr-only">Menu</span>
+            <span class="burger" aria-hidden="true"><span></span><span></span></span>
+          </summary>
+          <div class="mobile-panel">
+            <nav aria-label="Mobile">
+              <a href="#inicio" data-nav>Início</a>
+              <a href="#destaques" data-nav>Destaques</a>
+              <a href="#sobre" data-nav>Sobre Nós</a>
+              <a href="#produtos" data-nav>Produtos</a>
+              <a href="#contato" data-nav>Contato</a>
+              <a class="btn btn-block" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Suple%20Vitae%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">
+                <span>Falar no WhatsApp</span>
+                <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+              </a>
+            </nav>
+          </div>
+        </details>
+      </div>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-layout mx-auto grid w-full max-w-page items-center gap-8 px-4 md:px-6 lg:grid-cols-12 lg:gap-10">
+        <div class="hero-copy lg:col-span-5">
+          <h1 class="hero-title" id="hero-title">Linha natural no WhatsApp.</h1>
+          <p class="lede mt-4">Vitaminas, minerais e fórmulas da Suple Vitae. Escolha um destaque e fale com a gente.</p>
+          <a class="text-link hero-more-desktop mt-4" href="#produtos">Ver o catálogo</a>
+        </div>
+
+        <div class="hero-stage min-w-0 lg:col-span-7" id="destaques">
+          <div class="swiper hero-swiper">
+            <div class="swiper-wrapper">
+              <article class="swiper-slide">
+                <div class="bezel">
+                  <div class="bezel-inner grid gap-4 p-3 md:grid-cols-2 md:items-center md:p-4">
+                    <div class="hero-photo">
+                      <img src="images/omega.jpg" width="1100" height="1100" alt="Frasco âmbar e cápsulas douradas de ômega 3 sobre linho" fetchpriority="high">
+                    </div>
+                    <div class="flex flex-col gap-2 px-1 py-1 md:px-2">
+                      <div class="badge-slot"><span class="badge">Mais vendido</span></div>
+                      <h2 class="slide-title">Ômega 3 Ultra</h2>
+                      <p class="condition">Óleo de peixe em cápsulas para a rotina diária.</p>
+                      <p class="condition">Frete grátis nesta amostra</p>
+                      <a class="btn mt-2 w-full md:w-auto" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20comprar%20o%20produto%20%C3%94mega%203%20Ultra." target="_blank" rel="noopener noreferrer" aria-label="Comprar pelo WhatsApp: Ômega 3 Ultra. Abre em uma nova aba.">
+                        <span>Comprar pelo WhatsApp</span>
+                        <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="swiper-slide">
+                <div class="bezel">
+                  <div class="bezel-inner grid gap-4 p-3 md:grid-cols-2 md:items-center md:p-4">
+                    <div class="hero-photo">
+                      <img src="images/vitamina.jpg" width="1100" height="1100" alt="Frasco conta-gotas e cápsulas de vitamina D sobre linho" loading="lazy">
+                    </div>
+                    <div class="flex flex-col gap-2 px-1 py-1 md:px-2">
+                      <div class="badge-slot"><span class="badge">Novidade</span></div>
+                      <h2 class="slide-title">Vitamina D3 + K2</h2>
+                      <p class="condition">Vitamina D3 com K2 em cápsulas.</p>
+                      <p class="condition">Condição especial no kit com 2</p>
+                      <a class="btn mt-2 w-full md:w-auto" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20comprar%20o%20produto%20Vitamina%20D3%20%2B%20K2." target="_blank" rel="noopener noreferrer" aria-label="Comprar pelo WhatsApp: Vitamina D3 + K2. Abre em uma nova aba.">
+                        <span>Comprar pelo WhatsApp</span>
+                        <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <article class="swiper-slide">
+                <div class="bezel">
+                  <div class="bezel-inner grid gap-4 p-3 md:grid-cols-2 md:items-center md:p-4">
+                    <div class="hero-photo">
+                      <img src="images/colageno.jpg" width="1100" height="1100" alt="Pote de vidro com colágeno em pó e colher de madeira" loading="lazy">
+                    </div>
+                    <div class="flex flex-col gap-2 px-1 py-1 md:px-2">
+                      <div class="badge-slot"><span class="badge">Mais vendido</span></div>
+                      <h2 class="slide-title">Colágeno em pó</h2>
+                      <p class="condition">Peptídeos de colágeno sem sabor.</p>
+                      <p class="condition">Pote com 30 doses</p>
+                      <a class="btn mt-2 w-full md:w-auto" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20comprar%20o%20produto%20Col%C3%A1geno%20em%20p%C3%B3." target="_blank" rel="noopener noreferrer" aria-label="Comprar pelo WhatsApp: Colágeno em pó. Abre em uma nova aba.">
+                        <span>Comprar pelo WhatsApp</span>
+                        <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="hero-controls">
+            <div class="hero-pagination"></div>
+            <div class="flex gap-2">
+              <button class="icon-btn hero-pause" type="button" aria-pressed="false" aria-label="Pausar destaque automático">
+                <i class="fa-solid fa-pause when-playing" aria-hidden="true"></i>
+                <i class="fa-solid fa-play when-paused" aria-hidden="true"></i>
+              </button>
+              <button class="icon-btn hero-prev" type="button" aria-label="Produto anterior">
+                <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+              </button>
+              <button class="icon-btn hero-next" type="button" aria-label="Próximo produto">
+                <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+        <a class="text-link hero-more-mobile" href="#produtos">Ver o catálogo</a>
+      </div>
+    </section>
+
+    <section class="section about" id="sobre" aria-labelledby="sobre-title">
+      <div class="mx-auto w-full max-w-page px-4 md:px-6">
+        <div class="reveal max-w-[40rem]">
+          <h2 class="section-title" id="sobre-title">Sobre a Suple Vitae</h2>
+          <p class="lede mt-4">A Suple Vitae reúne suplementos naturais com procedência clara e atendimento humano no WhatsApp.</p>
+        </div>
+
+        <div class="mt-12 grid items-stretch gap-6 lg:grid-cols-12">
+          <figure class="reveal bezel lg:col-span-7">
+            <div class="shot">
+              <img src="images/sobre.jpg" width="1600" height="1200" alt="Folhas de oliveira, almofariz e frascos de vidro sobre linho" loading="lazy">
+            </div>
+          </figure>
+          <div class="reveal promise-panel lg:col-span-5">
+            <ul class="promises">
+              <li>
+                <span class="promise-icon" aria-hidden="true"><i class="fa-solid fa-truck"></i></span>
+                <div>
+                  <h3>Frete para todo o Brasil</h3>
+                  <p>Envio para todas as regiões. O prazo é combinado no pedido.</p>
+                </div>
+              </li>
+              <li>
+                <span class="promise-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></span>
+                <div>
+                  <h3>Qualidade garantida</h3>
+                  <p>Lote e procedência informados antes da compra.</p>
+                </div>
+              </li>
+              <li>
+                <span class="promise-icon" aria-hidden="true"><i class="fa-solid fa-comments"></i></span>
+                <div>
+                  <h3>Atendimento personalizado</h3>
+                  <p>Uma pessoa ajuda a escolher o produto da rotina.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="produtos" aria-labelledby="produtos-title">
+      <div class="mx-auto w-full max-w-page px-4 md:px-6">
+        <div class="reveal max-w-[40rem]">
+          <h2 class="section-title" id="produtos-title">Amostra de produtos</h2>
+          <p class="lede mt-4">Esta vitrine é uma amostra. O pedido fecha no WhatsApp.</p>
+        </div>
+
+        <div class="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div class="filters" role="group" aria-label="Filtrar por categoria">
+            <button class="filter" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+            <button class="filter" type="button" data-filter="vitaminas" aria-pressed="false">Vitaminas</button>
+            <button class="filter" type="button" data-filter="minerais" aria-pressed="false">Minerais</button>
+            <button class="filter" type="button" data-filter="proteinas" aria-pressed="false">Proteínas</button>
+            <button class="filter" type="button" data-filter="bem-estar" aria-pressed="false">Bem-estar</button>
+          </div>
+          <p class="catalog-status" id="catalogo-status" aria-live="polite">8 produtos na vitrine</p>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4" id="catalogo">
+          <article class="product-card reveal" data-category="bem-estar" data-name="Ômega 3 Ultra">
+            <div class="product-core">
+              <div class="product-shot">
+                <img src="images/omega.jpg" width="1100" height="1100" alt="Frasco âmbar e cápsulas douradas de ômega 3 sobre linho" loading="lazy">
+              </div>
+              <div class="product-body">
+                <div class="badge-slot"><span class="badge">Mais vendido</span></div>
+                <h3>Ômega 3 Ultra</h3>
+                <p>Óleo de peixe em cápsulas para a rotina diária.</p>
+                <p class="condition">60 cápsulas</p>
+                <a class="btn btn-block" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20produto%20%C3%94mega%203%20Ultra." target="_blank" rel="noopener noreferrer" aria-label="Pedir pelo WhatsApp: Ômega 3 Ultra. Abre em uma nova aba.">
+                  <span>Pedir pelo WhatsApp</span>
+                  <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="vitaminas" data-name="Vitamina D3 + K2">
+            <div class="product-core">
+              <div class="product-shot">
+                <img src="images/vitamina.jpg" width="1100" height="1100" alt="Frasco conta-gotas e cápsulas de vitamina D sobre linho" loading="lazy">
+              </div>
+              <div class="product-body">
+                <div class="badge-slot"><span class="badge">Novidade</span></div>
+                <h3>Vitamina D3 + K2</h3>
+                <p>Vitamina D3 com K2 em cápsulas.</p>
+                <p class="condition">Kit com 2 sai com condição especial</p>
+                <a class="btn btn-block" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20produto%20Vitamina%20D3%20%2B%20K2." target="_blank" rel="noopener noreferrer" aria-label="Pedir pelo WhatsApp: Vitamina D3 + K2. Abre em uma nova aba.">
+                  <span>Pedir pelo WhatsApp</span>
+                  <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="proteinas" data-name="Colágeno em pó">
+            <div class="product-core">
+              <div class="product-shot">
+                <img src="images/colageno.jpg" width="1100" height="1100" alt="Pote de vidro com colágeno em pó e colher de madeira" loading="lazy">
+              </div>
+              <div class="product-body">
+                <div class="badge-slot"><span class="badge">Mais vendido</span></div>
+                <h3>Colágeno em pó</h3>
+                <p>Peptídeos de colágeno sem sabor.</p>
+                <p class="condition">Pote com 30 doses</p>
+                <a class="btn btn-block" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20produto%20Col%C3%A1geno%20em%20p%C3%B3." target="_blank" rel="noopener noreferrer" aria-label="Pedir pelo WhatsApp: Colágeno em pó. Abre em uma nova aba.">
+                  <span>Pedir pelo WhatsApp</span>
+                  <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="minerais" data-name="Magnésio Dimalato">
+            <div class="product-core">
+              <div class="product-shot">
+                <img src="images/magnesio.jpg" width="1100" height="1100" alt="Tigela verde com cápsulas de magnésio e folhas de eucalipto" loading="lazy">
+              </div>
+              <div class="product-body">
+                <div class="badge-slot"></div>
+                <h3>Magnésio Dimalato</h3>
+                <p>Magnésio quelado em cápsulas.</p>
+                <p class="condition">Frasco com 60 cápsulas</p>
+                <a class="btn btn-block" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20produto%20Magn%C3%A9sio%20Dimalato." target="_blank" rel="noopener noreferrer" aria-label="Pedir pelo WhatsApp: Magnésio Dimalato. Abre em uma nova aba.">
+                  <span>Pedir pelo WhatsApp</span>
+                  <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="proteinas" data-name="Proteína vegetal">
+            <div class="product-core">
+              <div class="product-shot">
+                <img src="images/proteina.jpg" width="1100" height="1100" alt="Copo de proteína vegetal, dose em pó e brotos de ervilha" loading="lazy">
+              </div>
+              <div class="product-body">
+                <div class="badge-slot"></div>
+                <h3>Proteína vegetal</h3>
+                <p>Blend de ervilha e arroz, baunilha suave.</p>
+                <p class="condition">Lata com 500 g</p>
+                <a class="btn btn-block" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20produto%20Prote%C3%ADna%20vegetal." target="_blank" rel="noopener noreferrer" aria-label="Pedir pelo WhatsApp: Proteína vegetal. Abre em uma nova aba.">
+                  <span>Pedir pelo WhatsApp</span>
+                  <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="bem-estar" data-name="Ashwagandha">
+            <div class="product-core">
+              <div class="product-shot">
+                <img src="images/erva.jpg" width="1100" height="1100" alt="Raízes secas de ashwagandha ao lado de um pote de papel" loading="lazy">
+              </div>
+              <div class="product-body">
+                <div class="badge-slot"><span class="badge">Novidade</span></div>
+                <h3>Ashwagandha</h3>
+                <p>Extrato de ashwagandha em cápsulas.</p>
+                <p class="condition">Frasco com 60 cápsulas</p>
+                <a class="btn btn-block" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20produto%20Ashwagandha." target="_blank" rel="noopener noreferrer" aria-label="Pedir pelo WhatsApp: Ashwagandha. Abre em uma nova aba.">
+                  <span>Pedir pelo WhatsApp</span>
+                  <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="bem-estar" data-name="Probiótico diário">
+            <div class="product-core">
+              <div class="product-shot">
+                <img src="images/probiotico.jpg" width="1100" height="1100" alt="Pote de cápsulas probióticas ao lado de um copo de kefir" loading="lazy">
+              </div>
+              <div class="product-body">
+                <div class="badge-slot"></div>
+                <h3>Probiótico diário</h3>
+                <p>Cápsulas probióticas para uso diário.</p>
+                <p class="condition">Frasco com 30 cápsulas</p>
+                <a class="btn btn-block" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20produto%20Probi%C3%B3tico%20di%C3%A1rio." target="_blank" rel="noopener noreferrer" aria-label="Pedir pelo WhatsApp: Probiótico diário. Abre em uma nova aba.">
+                  <span>Pedir pelo WhatsApp</span>
+                  <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-category="vitaminas" data-name="Multivitamínico">
+            <div class="product-core">
+              <div class="product-shot">
+                <img src="images/multi.jpg" width="1100" height="1100" alt="Tigela de madeira com cápsulas do multivitamínico" loading="lazy">
+              </div>
+              <div class="product-body">
+                <div class="badge-slot"></div>
+                <h3>Multivitamínico</h3>
+                <p>Vitaminas e minerais em uma cápsula ao dia.</p>
+                <p class="condition">Uso para 30 dias</p>
+                <a class="btn btn-block" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20o%20produto%20Multivitam%C3%ADnico." target="_blank" rel="noopener noreferrer" aria-label="Pedir pelo WhatsApp: Multivitamínico. Abre em uma nova aba.">
+                  <span>Pedir pelo WhatsApp</span>
+                  <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="empty-state" id="catalogo-vazio" hidden>
+          <p>Nenhum produto nesta categoria.</p>
+          <button class="btn mt-4" id="ver-todos" type="button">
+            <span>Ver todos</span>
+            <span class="btn-icon" aria-hidden="true"><i class="fa-solid fa-arrow-right"></i></span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato" aria-labelledby="contato-title">
+      <div class="mx-auto grid w-full max-w-page items-end gap-8 px-4 md:px-6 lg:grid-cols-2">
+        <div class="reveal">
+          <h2 class="section-title" id="contato-title">Fale com a Suple Vitae</h2>
+          <p class="lede mt-4">Chame no WhatsApp para tirar dúvida de produto, prazo ou frete.</p>
+        </div>
+        <div class="reveal flex flex-col items-start gap-4">
+          <a class="phone-link" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Suple%20Vitae%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">+55 12 99131-5805</a>
+          <a class="btn" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Suple%20Vitae%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">
+            <span>Falar no WhatsApp</span>
+            <span class="btn-icon" aria-hidden="true"><i class="fa-brands fa-whatsapp"></i></span>
+          </a>
+          <a class="text-link" href="https://www.instagram.com/suplevitae/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-instagram" aria-hidden="true"></i>
+            <span class="ml-2">Instagram</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="mx-auto grid w-full max-w-page gap-10 px-4 md:px-6 md:grid-cols-3">
+      <div>
+        <div class="footer-brand-row">
+          <span class="logo-plate logo-plate-lg">
+            <img class="logo-mark" src="images/logo.png" alt="" width="76" height="76">
+          </span>
+          <p class="footer-brand">Suple Vitae</p>
+        </div>
+        <p class="footer-muted mt-2">Suplementos naturais para a rotina.</p>
+      </div>
+      <nav aria-label="Links do rodapé">
+        <p class="footer-brand text-base">Links rápidos</p>
+        <ul class="footer-links mt-3">
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#destaques">Destaques</a></li>
+          <li><a href="#sobre">Sobre Nós</a></li>
+          <li><a href="#produtos">Produtos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="footer-brand text-base">Contato</p>
+        <ul class="footer-links mt-3">
+          <li><a href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Suple%20Vitae%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs." target="_blank" rel="noopener noreferrer">+55 12 99131-5805</a></li>
+          <li><a href="https://www.instagram.com/suplevitae/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="footer-muted mx-auto mt-12 w-full max-w-page px-4 text-sm md:px-6">© 2026 Suple Vitae. Todos os direitos reservados.</p>
+  </footer>
+
+  <a class="wa-float" href="https://wa.me/5512991315805?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Suple%20Vitae%20e%20gostaria%20de%20falar%20com%20voc%C3%AAs." target="_blank" rel="noopener noreferrer" aria-label="Falar no WhatsApp">
+    <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    (function () {
+      var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      var root = document.documentElement;
+      var themeBtn = document.getElementById("theme-toggle");
+      var themeMeta = document.getElementById("theme-color");
+      var menu = document.getElementById("menu-mobile");
+
+      function applyTheme(theme, persist) {
+        root.setAttribute("data-theme", theme);
+        if (persist) localStorage.setItem("suple-theme", theme);
+        var dark = theme === "dark";
+        themeBtn.setAttribute("aria-pressed", dark ? "true" : "false");
+        themeBtn.setAttribute("aria-label", dark ? "Ativar tema claro" : "Ativar tema escuro");
+        if (themeMeta) themeMeta.setAttribute("content", dark ? "#2c3324" : "#fffbe3");
+      }
+
+      applyTheme(root.getAttribute("data-theme") || "light", false);
+      themeBtn.addEventListener("click", function () {
+        applyTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark", true);
+      });
+
+      menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", function () { menu.open = false; });
+      });
+
+      document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape" && menu.open) {
+          menu.open = false;
+          menu.querySelector("summary").focus();
+        }
+      });
+
+      var reveals = document.querySelectorAll(".reveal");
+      if (reduce) {
+        reveals.forEach(function (el) { el.classList.add("is-in"); });
+      } else if ("IntersectionObserver" in window) {
+        var revealObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            if (!entry.isIntersecting) return;
+            entry.target.classList.add("is-in");
+            revealObserver.unobserve(entry.target);
+          });
+        }, { threshold: 0.16 });
+        reveals.forEach(function (el) { revealObserver.observe(el); });
+      } else {
+        reveals.forEach(function (el) { el.classList.add("is-in"); });
+      }
+
+      var navLinks = document.querySelectorAll("[data-nav]");
+      var sections = ["inicio", "destaques", "sobre", "produtos", "contato"]
+        .map(function (id) { return document.getElementById(id); })
+        .filter(Boolean);
+      if ("IntersectionObserver" in window) {
+        var visible = new Map();
+        var sectionObserver = new IntersectionObserver(function (entries) {
+          entries.forEach(function (entry) {
+            visible.set(entry.target.id, entry.isIntersecting ? entry.intersectionRatio : 0);
+          });
+          var best = null;
+          var bestRatio = 0;
+          visible.forEach(function (ratio, id) {
+            if (ratio > bestRatio) {
+              bestRatio = ratio;
+              best = id;
+            }
+          });
+          if (window.scrollY < 48) best = "inicio";
+          navLinks.forEach(function (link) {
+            if (best && link.getAttribute("href") === "#" + best) link.setAttribute("aria-current", "page");
+            else link.removeAttribute("aria-current");
+          });
+        }, { rootMargin: "-20% 0px -55% 0px", threshold: [0.15, 0.4, 0.7] });
+        sections.forEach(function (section) { sectionObserver.observe(section); });
+      }
+
+      var filters = document.querySelectorAll("[data-filter]");
+      var cards = document.querySelectorAll("[data-category]");
+      var empty = document.getElementById("catalogo-vazio");
+      var status = document.getElementById("catalogo-status");
+
+      function applyFilter(name, label) {
+        filters.forEach(function (button) {
+          button.setAttribute("aria-pressed", button.getAttribute("data-filter") === name ? "true" : "false");
+        });
+        var count = 0;
+        cards.forEach(function (card) {
+          var show = name === "todos" || card.getAttribute("data-category") === name;
+          card.hidden = !show;
+          if (show) count += 1;
+        });
+        empty.hidden = count !== 0;
+        var noun = count === 1 ? "produto" : "produtos";
+        status.textContent = name === "todos"
+          ? count + " " + noun + " na vitrine"
+          : count + " " + noun + " em " + label;
+      }
+
+      filters.forEach(function (button) {
+        button.addEventListener("click", function () {
+          applyFilter(button.getAttribute("data-filter"), button.textContent.trim());
+        });
+      });
+
+      document.getElementById("ver-todos").addEventListener("click", function () {
+        applyFilter("todos", "Todos");
+        document.getElementById("produtos").scrollIntoView({ behavior: reduce ? "auto" : "smooth", block: "start" });
+      });
+
+      if (window.Swiper) {
+        var swiper = new Swiper(".hero-swiper", {
+          loop: true,
+          speed: reduce ? 0 : 650,
+          spaceBetween: 18,
+          autoplay: reduce ? false : {
+            delay: 5800,
+            disableOnInteraction: false,
+            pauseOnMouseEnter: true
+          },
+          pagination: { el: ".hero-pagination", clickable: true },
+          navigation: { nextEl: ".hero-next", prevEl: ".hero-prev" },
+          keyboard: { enabled: true, onlyInViewport: true },
+          a11y: {
+            prevSlideMessage: "Produto anterior",
+            nextSlideMessage: "Próximo produto",
+            paginationBulletMessage: "Ir para o produto {{index}}"
+          }
+        });
+
+        var pauseBtn = document.querySelector(".hero-pause");
+        var hero = document.querySelector(".hero-swiper");
+        if (!reduce && pauseBtn) {
+          pauseBtn.addEventListener("click", function () {
+            var paused = pauseBtn.getAttribute("aria-pressed") === "true";
+            if (paused) {
+              swiper.autoplay.start();
+              pauseBtn.setAttribute("aria-pressed", "false");
+              pauseBtn.setAttribute("aria-label", "Pausar destaque automático");
+            } else {
+              swiper.autoplay.stop();
+              pauseBtn.setAttribute("aria-pressed", "true");
+              pauseBtn.setAttribute("aria-label", "Retomar destaque automático");
+            }
+          });
+          hero.addEventListener("focusin", function () { swiper.autoplay.stop(); });
+          hero.addEventListener("focusout", function () {
+            if (pauseBtn.getAttribute("aria-pressed") !== "true") swiper.autoplay.start();
+          });
+        }
+      }
+    })();
+  </script>
+</body>
+</html>

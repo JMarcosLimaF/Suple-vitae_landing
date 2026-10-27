@@ -1,0 +1,10 @@
+{
+  "name": "suple-vitae-landing",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Landing page da Suple Vitae",
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "build": "node scripts/build.mjs"
+  }
+}
