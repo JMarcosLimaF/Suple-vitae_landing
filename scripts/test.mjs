@@ -13,6 +13,10 @@ function check(ok, message) {
 check(html.includes("Suple Vitae"), "o nome visível precisa ser Suple Vitae");
 check(!html.includes("Supla"), "o nome antigo Supla não pode aparecer");
 check(!html.includes("R$"), "a página não pode mostrar preços");
+check(!html.includes("Amostra de produtos"), "a vitrine de amostra não pode voltar");
+check(html.includes("Desparasitação"), "falta a linha Desparasitação");
+check(html.includes("Suplementos"), "falta a linha Suplementos");
+check(html.includes("Linha Kids"), "falta a linha Kids");
 check(html.includes('src="images/logo.png"'), "o logo da empresa precisa estar na página");
 check(html.includes("images/logo.png"), "o favicon precisa usar o logo");
 check(existsSync(join(root, "images/logo.png")), "images/logo.png precisa existir");
